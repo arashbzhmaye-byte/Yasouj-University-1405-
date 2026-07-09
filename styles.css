@@ -31,6 +31,7 @@ nav {
     z-index: 1000;
     background-color: #122b44;
     padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 nav ul {
     list-style: none;
@@ -44,6 +45,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 1.1rem;
     transition: 0.3s;
 }
 nav ul li a:hover {
@@ -123,20 +125,14 @@ footer .social-links a:hover {
     nav ul {
         gap: 15px;
     }
+    nav ul li a {
+        font-size: 0.9rem;
+    }
     .card {
         width: 100%;
         max-width: 320px;
     }
-}
-
-
-
-
-
-
-
-
-
+    }
 
 
 
