@@ -1,4 +1,4 @@
-‌* {
+* {
     box-sizing: border-box;
 }
 body {
@@ -112,7 +112,13 @@ footer .social-links a:hover {
 @media (max-width: 768px) {
     nav ul { gap: 15px; }
     .card { width: 100%; max-width: 320px; }
-                                }
+}
+
+
+
+
+
+
 
 
 
