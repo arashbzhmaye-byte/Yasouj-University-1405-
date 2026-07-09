@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Tahoma, sans-serif;
     margin: 0;
@@ -23,6 +26,9 @@ header p {
     opacity: 0.9;
 }
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #122b44;
     padding: 15px 0;
 }
@@ -56,14 +62,18 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.hero-image {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
+.banner {
+    background: linear-gradient(135deg, #e0e7ff, #c3d5ff);
+    padding: 40px 20px;
     border-radius: 10px;
+    border: 2px dashed #2a5298;
     margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.banner p {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1e3c72;
 }
 section h2 {
     margin-top: 0;
@@ -110,9 +120,16 @@ footer .social-links a:hover {
     color: #f5c518;
 }
 @media (max-width: 768px) {
-    nav ul { gap: 15px; }
-    .card { width: 100%; max-width: 320px; }
+    nav ul {
+        gap: 15px;
+    }
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
 }
+
+
 
 
 
